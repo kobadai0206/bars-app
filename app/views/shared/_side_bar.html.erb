@@ -1,0 +1,38 @@
+/ ユーザー編集ページに遷移するためのパスを追加
+<div class="side-bar">
+    <div class="header">
+        <% h3.header__name%>
+            <%= current_user.name %>
+        <% ul.header__lists %>
+            <% li.list %>
+                <%= link_to do %>
+                    <%= icon('fas', 'pensquare', class: 'icon') %>
+                <% end %>
+    </div>
+    <div class="groups">
+        <div class="group">
+            <div class="group__name">
+                グループ名
+            </div>
+            <div class="group__message">
+                新着メッセージ
+            </div>
+        </div>
+        <div class="group">
+            <div class="group__name">
+                グループ名
+            </div>
+            <div class="group__message">
+                新着メッセージ
+            </div>
+        </div>
+        <div class="group">
+            <div class="group__name">
+                グループ名
+            </div>
+            <div class="group__message">
+                新着メッセージ
+            </div>
+        </div>
+    </div>
+</div>
